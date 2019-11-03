@@ -1,3 +1,8 @@
 const actions = require("@actions/exec");
 
-actions.exec("/bin/sh ./install.sh");
+async function run() {
+  await actions.exec("ls -l");
+  await actions.exec("/bin/sh", ["./install.sh"]);
+}
+
+run();
