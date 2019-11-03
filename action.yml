@@ -1,4 +1,4 @@
 name: Pandoc Action
 runs:
-  using: sh
-  main: ./install.sh
+  using: node12
+  main: ./main.js
