@@ -5,10 +5,10 @@ async function run() {
   let output;
   let error;
   options.listeners = {
-    stdout: (data: Buffer) => {
+    stdout: (data) => {
       output += data.toString();
     },
-    stderr: (data: Buffer) => {
+    stderr: (data) => {
       error += data.toString();
     }
   };
