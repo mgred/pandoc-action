@@ -1,0 +1,4 @@
+name: Pandoc Action
+runs:
+  using: sh
+  main: ./install.sh
